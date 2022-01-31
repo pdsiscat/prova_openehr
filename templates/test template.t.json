@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "5f6636c0-9ed1-4b02-a4af-85d5bc5d21d6",
-      "MD5-CAM-1.0.1" : "299c771b552832299fb59e633db86ff8",
+      "MD5-CAM-1.0.1" : "e46210a50003437ef2bf0e80338369d6",
       "PARENT:MD5-CAM-1.0.1" : "0712A2A1FBF1AB594DD2247C102E6BD6"
     },
     "details" : {
@@ -328,7 +328,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
-              "nodeId" : "at0003",
+              "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "offset",
@@ -604,7 +604,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "1 minute TEST_PAU",
+            "description" : "Apgar score 1 minute after birth."
+          }
+        },
         "es-cl" : { },
         "de" : { },
         "fa" : { },
@@ -619,7 +626,8 @@
       "termBindings" : {
         "SNOMED-CT" : {
           "at0021.1" : "term:SNOMED-CT::249227004",
-          "at0017.1" : "term:SNOMED-CT::249226008"
+          "at0017.1" : "term:SNOMED-CT::249226008",
+          "at0003.1" : "term:SNOMED-CT::169895004"
         }
       },
       "terminologyExtracts" : { },
