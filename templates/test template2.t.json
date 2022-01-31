@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "5f6636c0-9ed1-4b02-a4af-85d5bc5d21d6",
-      "MD5-CAM-1.0.1" : "7d9b18384e5496fd4dbfc239c1778e26",
+      "MD5-CAM-1.0.1" : "7b314b10e5c75f307edf2472447c90e6",
       "PARENT:MD5-CAM-1.0.1" : "0712A2A1FBF1AB594DD2247C102E6BD6"
     },
     "details" : {
@@ -487,7 +487,30 @@
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0001.4",
                   "targetPath" : "/data[at0002]/events[at0003]/data[at0001.1]",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0021.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "defaultValue" : {
+                            "value" : 0,
+                            "@type" : "DV_ORDINAL"
+                          },
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -606,7 +629,8 @@
       "termBindings" : {
         "SNOMED-CT" : {
           "at0021.1" : "term:SNOMED-CT::249227004",
-          "at0017.1" : "term:SNOMED-CT::249226008"
+          "at0017.1" : "term:SNOMED-CT::249226008",
+          "at0021.2" : "term:SNOMED-CT::249227004"
         }
       },
       "terminologyExtracts" : { },
