@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"UK Clinical Models">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"E62D896E2577FA727C75A9EFFD7CA63E">
+		["MD5-CAM-1.0.1"] = <"00b16b7a08434f9389b80cce8a48c098">
 		["build_uid"] = <"feed3fab-2d92-470b-a6c9-f19499a58c8b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -131,6 +131,13 @@ definition
 					}
 				}
 			}
+			CLUSTER[at0012] occurrences matches {0..1} matches {    -- Admin_Salut
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0013] occurrences matches {0..1} matches {*}    -- SA
+					ELEMENT[at0014] occurrences matches {0..1} matches {*}    -- Centre
+					ELEMENT[at0015] occurrences matches {0..1} matches {*}    -- UP
+				}
+			}
 		}
 	}
 
@@ -182,6 +189,22 @@ Coded text is preferred, normally specific to an XDS Affinity Domain.">
 					text = <"Event code">
 					description = <"This list of codes represents the main clinical acts.">
 					comment = <"For example: Colonoscopy or appendicectomy.">
+				>
+				["at0012"] = <
+					text = <"Admin_Salut">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"SA">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Centre">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"UP">
+					description = <"">
 				>
 			>
 		>
